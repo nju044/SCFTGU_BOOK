@@ -25,6 +25,7 @@ Respect the copyrights of the authors and publishers.
 
 - Springer <https://www.springer.com/us/book/9780387699578>
 - Amazon <http://a.co/91QwLwi>
+- Google <https://books.google.com.ag/books?id=Op2a6yiO9jwC&printsec=frontcover&hl=zh-CN&pli=1#v=onepage&q&f=false>
 
 #### Quotes
 

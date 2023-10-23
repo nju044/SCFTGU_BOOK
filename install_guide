@@ -1,0 +1,10 @@
+# make sure https://github.com/nju044/SCFTGU_BOOK.git installed @ ${HOME}/kn_only/SCFTGU_BOOK
+cd ${HOME}/kn_only/SCFTGU_BOOK5
+mkdir systemc
+cd systemc
+wget https://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.3.tar.gz
+tar xf systemc-2.3.3.tar.gz
+cd systemc-2.3.3/
+CXXFLAGS=-std=c++11 ./configure --prefix=${HOME}/kn_only/SCFTGU_BOOK/systemc
+make
+make install

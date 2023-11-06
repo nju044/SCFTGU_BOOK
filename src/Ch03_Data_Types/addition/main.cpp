@@ -1,8 +1,8 @@
-//FILE: main.cpp (systemc)
-//# vim600:set sw=2 tw=0 fdm=marker:
+// FILE: main.cpp (systemc)
+// # vim600:set sw=2 tw=0 fdm=marker:
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// DESCRIPTION
-//   This example illustrates problems with data sizes and conversions.
+//  DESCRIPTION
+//    This example illustrates problems with data sizes and conversions.
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #include <iostream>
@@ -11,12 +11,13 @@ using std::endl;
 
 #include <systemc>
 using namespace sc_dt;
-char* simulation_name = "bigint";
-char* simulation_vers = "$Header: /eklectICally/Project/ea/Cvsroot/Book2003/Examples/addition/main.cpp,v 1.2 2004/03/03 03:15:09 dcblack Exp $";
+std::string simulation_name = "bigint";
+std::string simulation_vers = "$Header: /eklectICally/Project/ea/Cvsroot/Book2003/Examples/addition/main.cpp,v 1.2 2004/03/03 03:15:09 dcblack Exp $";
 
-int sc_main(int argc, char* argv[]) {
+int sc_main(int argc, char *argv[])
+{
   {
-    cout << std::string(40,'-') << endl;
+    cout << std::string(40, '-') << endl;
     cout << "INFO: Adding 3 shorts to produce an int" << endl;
     short a = 32767;
     short b = 32767;
@@ -31,7 +32,7 @@ int sc_main(int argc, char* argv[]) {
     cout << "INFO: a + b + c = csum = " << csum << " OK" << endl;
   }
   {
-    cout << std::string(40,'-') << endl;
+    cout << std::string(40, '-') << endl;
     cout << "INFO: Adding 3 sc_ints to produce a bigger sc_int" << endl;
     sc_int<3> d(3);
     sc_int<5> e(15);
@@ -44,7 +45,7 @@ int sc_main(int argc, char* argv[]) {
     cout << "INFO: d + e + f = sum = " << sum << " OK" << endl;
   }
   {
-    cout << std::string(40,'-') << endl;
+    cout << std::string(40, '-') << endl;
     cout << "INFO: Adding 3 sc_ints to produce an sc_bigint" << endl;
     sc_int<64> g("0x7000000000000000");
     sc_int<64> h("0x7000000000000000");
@@ -60,12 +61,14 @@ int sc_main(int argc, char* argv[]) {
     cout << "INFO: g + h + i = bigsum = " << bigsum << " OK" << endl;
   }
   //
-  cout << std::string(40,'-') << endl;
+  cout << std::string(40, '-') << endl;
   cout << "INFO: The end" << endl;
+
+  return 0;
 }
 
-//Portions COPYRIGHT (C) 2003-2004 Eklectic Ally, Inc.-------------{{{//
-// Permission granted for anybody to use this example provided this   //
-// acknowledgement of Eklectic Ally, Inc. remains.                    //
+// Portions COPYRIGHT (C) 2003-2004 Eklectic Ally, Inc.-------------{{{//
+//  Permission granted for anybody to use this example provided this   //
+//  acknowledgement of Eklectic Ally, Inc. remains.                    //
 //-----------------------------------------------------------------}}}//
-//END $Id: main.cpp,v 1.2 2004/03/03 03:15:09 dcblack Exp $
+// END $Id: main.cpp,v 1.2 2004/03/03 03:15:09 dcblack Exp $

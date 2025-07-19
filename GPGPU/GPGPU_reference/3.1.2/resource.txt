@@ -1,0 +1,3 @@
+
+https://www.patentguru.com/cn/US10067768B2  ： Execution of divergent threads using a convergence barrier
+

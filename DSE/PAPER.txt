@@ -1,0 +1,5 @@
+Multiobjective GPU design space exploration optimization
+2024
+Euro-Par 2024
+ 26-30 August  Madrid, Spain
+Euro-Par 2024: Parallel Processing
